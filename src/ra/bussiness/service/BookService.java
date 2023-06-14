@@ -29,7 +29,7 @@ public class BookService {
 
    public void save(Book book) {
       if (findById(book.getBookId()) == null) {
-         if(size == 100) {
+         if (size == 100) {
             System.err.println("~~ Danh sách đã đầy ~~");
             return;
          }
